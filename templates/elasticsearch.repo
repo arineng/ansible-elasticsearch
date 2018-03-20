@@ -1,6 +1,6 @@
 [elasticsearch-{{ es_major_version }}]
 name=Elasticsearch repository for {{ es_major_version }} packages
-baseurl=http://packages.elastic.co/elasticsearch/{{ es_major_version }}/centos
+baseurl={{ es_yum_url }}
 gpgcheck=1
-gpgkey=http://packages.elastic.co/GPG-KEY-elasticsearch
+gpgkey={{ es_yum_gpgkey }}
 enabled=1
